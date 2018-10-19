@@ -30,34 +30,34 @@
 	<link href="{{ URL::asset('assets/css/mystyle.css') }}" rel="stylesheet" />
 	<!-- END THEME STYLES -->
 </head>
-	<body class="auth-page height-auto bg-grey-600">
-		<div class="wrapper animated fadeInDown">
+<body class="auth-page height-auto bg-grey-600">
+	<div class="wrapper animated fadeInDown">
 		<div class="panel overflow-hidden">
 			<div class="bg-grey-900 padding-40 no-margin-bottom font-size-20 color-white text-center text-uppercase">
 				<img src="{{ asset('assets/img/web/logo.png') }}">
 			</div>
 			@if (count($errors) > 0)
-						<div class="alert alert-danger">
-							<strong>Whoops!</strong> Ocurrio un error.<br><br>
-							<ul>
-								@foreach ($errors->all() as $error)
-									<li>{{ $error }}</li>
-								@endforeach
-							</ul>
-						</div>
-					@endif
+			<div class="alert alert-danger">
+				<strong>Whoops!</strong> Ocurrio un error.<br><br>
+				<ul>
+					@foreach ($errors->all() as $error)
+					<li>{{ $error }}</li>
+					@endforeach
+				</ul>
+			</div>
+			@endif
 			<form id="loginform" method="post" action="{{ url('/auth/login') }}" >
 				<input type="hidden" name="_token" value="{{ csrf_token() }}" />
 				<div class="box-body padding-md">
-				
+
 					<div class="form-group">
-						<input type="text" name="email" class="form-control input-lg" placeholder="Email"/>
+						<input type="text" name="email" class="form-control input-lg" placeholder="Correo electronico"/>
 					</div>
 					
 					<div class="form-group">
-						<input type="password" name="password" class="form-control input-lg" placeholder="Password"/>
+						<input type="password" name="password" class="form-control input-lg" placeholder="Contraseña"/>
 					</div>        
-					      
+
 					<div class="form-group margin-top-20">
 						<div class="checkbox checkbox-theme">
 							<input type="checkbox" id="remember" name="remember">
@@ -65,15 +65,15 @@
 						</div>
 					</div>  
 					
-					<button type="submit" class="btn btn-dark bg-light-green-500 padding-10 btn-block color-white"><i class="ion-log-in"></i> Registrarse</button>  
+					<button type="submit" class="btn btn-dark bg-light-green-500 padding-10 btn-block color-white"><i class="ion-log-in"></i> Iniciar sesión</button>  
 				</div>
 			</form>
-			<div class="panel-footer padding-md no-margin no-border bg-grey-900 text-center color-white">&copy; 2018 Gymaster by <a href="www.aunadigital.com">Aunadigital</a></div>
+			<div class="panel-footer padding-md no-margin no-border bg-grey-900 text-center color-white">&copy; 2018 Gymaster by Aunadigital</div>
 		</div>
 	</div>
-		
-    <!-- Javascript -->
-    <script src="{{ URL::asset('assets/plugins/jquery-1.11.1.min.js') }}" type="text/javascript"></script>
+
+	<!-- Javascript -->
+	<script src="{{ URL::asset('assets/plugins/jquery-1.11.1.min.js') }}" type="text/javascript"></script>
 	<script src="{{ URL::asset('assets/plugins/bootstrap/js/bootstrap.min.js') }}" type="text/javascript"></script>
 	<script src="{{ URL::asset('assets/plugins/slimScroll/jquery.slimscroll.min.js') }}" type="text/javascript"></script>
 	<script src="{{ URL::asset('assets/js/core.js') }}" type="text/javascript"></script>
@@ -85,10 +85,10 @@
 	<!-- maniac -->
 	<script src="{{ URL::asset('assets/js/maniac.js') }}" type="text/javascript"></script>
 	
-    <script src="{{ URL::asset('assets/js/login.js') }}" type="text/javascript"></script>
+	<script src="{{ URL::asset('assets/js/login.js') }}" type="text/javascript"></script>
 	
 	<script type="text/javascript">
 		gymie.loadvalidator();
 	</script>
-    </body>
+</body>
 </html>

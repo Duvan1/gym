@@ -9,7 +9,7 @@
         @if ($errors->any())
             <div class="alert alert-danger">
                 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                <strong>Whoops!</strong> There were some problems with your input.<br><br>
+                <strong>Whoops!</strong>Hubo algunos problemas con su entrada.<br><br>
                 <ul>
                     @foreach ($errors->all() as $error)
                     <li>{{ $error }}</li>
@@ -24,7 +24,7 @@
             <div class="col-md-12">   
                 <div class="panel no-border">
                     <div class="panel-title">
-                        <div class="panel-head font-size-20">Enter details of the enquiry</div>
+                        <div class="panel-head font-size-20">Ingrese los datos de su consulta</div>
                     </div>
                     <div class="panel-body">
                         @include('enquiries.form')
@@ -38,7 +38,7 @@
             <div class="col-md-12">   
                 <div class="panel no-border">
                     <div class="panel-title">
-                        <div class="panel-head font-size-20">Enter details of the follow up</div>
+                        <div class="panel-head font-size-20">Introduzca los detalles del seguimiento.</div>
                     </div>
                     <div class="panel-body">
                         @include('enquiries._followUp')       
