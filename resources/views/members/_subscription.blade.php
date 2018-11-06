@@ -5,7 +5,7 @@ use Carbon\Carbon;
 	<div class="col-md-12">
 		<div class="panel no-border">
 			<div class="panel-title">
-				<div class="panel-head font-size-20">Enter details of the subscription</div>
+				<div class="panel-head font-size-20">Introduzca los detalles de la subscripción</div>
 			</div>
 
 			<div class="panel-body">
@@ -67,7 +67,7 @@ use Carbon\Carbon;
 					<div class="row">
                         <div class="col-sm-2 pull-right">
                             <div class="form-group">
-                                 <span class="btn btn-sm btn-primary pull-right" id="addSubscription">Add</span>
+                                 <span class="btn btn-sm btn-primary pull-right" id="addSubscription">Agregar</span>
                             </div>
                         </div>
                     </div>

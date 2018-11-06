@@ -8,9 +8,9 @@
     <div class="page-head bg-grey-100 padding-top-15 no-padding-bottom">
         @include('flash::message')
         <h1 class="page-title no-line-height">Active Members
-        <small>Details of all active gym members</small></h1>
+        <small>Detalles de todos los miembros activos del gimnasio</small></h1>
         @permission(['manage-gymie','pagehead-stats'])
-        <h1 class="font-size-30 text-right color-blue-grey-600 animated fadeInDown total-count pull-right"><span  data-toggle="counter" data-start="0" data-from="0" data-to="{{ $count }}" data-speed="600" data-refresh-interval="10"></span> <small class="color-blue-grey-600 display-block margin-top-5 font-size-14">Active Members</small></h1>
+        <h1 class="font-size-30 text-right color-blue-grey-600 animated fadeInDown total-count pull-right"><span  data-toggle="counter" data-start="0" data-from="0" data-to="{{ $count }}" data-speed="600" data-refresh-interval="10"></span> <small class="color-blue-grey-600 display-block margin-top-5 font-size-14">Miembros activos</small></h1>
         @endpermission
     </div><!-- / PageHead -->
 
@@ -69,19 +69,19 @@
                     <div class="panel-body bg-white">                            
 
                         @if($members->count() == 0)
-                            <h4 class="text-center padding-top-15">Sorry! No records found</h4>
+                            <h4 class="text-center padding-top-15">¡Lo siento! No se encontrarón archivos</h4>
                             @else
                         <table id="members" class="table table-bordered table-striped">
                             <thead>
                                 <tr>
-                                    <th>Photo</th>
-                                    <th>Code</th>
-                                    <th>Name</th>
-                                    <th>Contact</th>
-                                    <th>Plan name</th>
-                                    <th>Member since</th>
-                                    <th>Status</th>
-                                    <th class="text-center">Actions</th>
+                                    <th>Foto</th>
+                                    <th>Codigo</th>
+                                    <th>Nombre</th>
+                                    <th>Contacto</th>
+                                    <th>Nombre del plan</th>
+                                    <th>Miembro desde</th>
+                                    <th>Estado</th>
+                                    <th class="text-center">Acciones</th>
                                 </tr>
                             </thead>
 
@@ -115,17 +115,17 @@
                                     <ul class="dropdown-menu" role="menu">
                                     <li>
                                         @permission(['manage-gymie','manage-members','view-member'])
-                                        <a href="{{ action('MembersController@show',['id' => $member->id]) }}">View details</a>
+                                        <a href="{{ action('MembersController@show',['id' => $member->id]) }}">Ver detalles</a>
                                         @endpermission
                                     </li>
                                     <li>
                                         @permission(['manage-gymie','manage-members','edit-member'])
-                                        <a href="{{ action('MembersController@edit',['id' => $member->id]) }}">Edit details</a>
+                                        <a href="{{ action('MembersController@edit',['id' => $member->id]) }}">Editar detalles</a>
                                         @endpermission
                                     </li>
                                     <li>
                                         @permission(['manage-gymie','manage-members','delete-member'])
-                                        <a href="#" class="delete-record" data-delete-url="{{ url('members/'.$member->id.'/archive') }}" data-record-id="{{$member->id}}">Delete member</a>
+                                        <a href="#" class="delete-record" data-delete-url="{{ url('members/'.$member->id.'/archive') }}" data-record-id="{{$member->id}}">Borrar miembro</a>
                                         @endpermission
                                     </li>
                                     </ul>
