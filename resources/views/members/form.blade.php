@@ -9,14 +9,14 @@
 <div class="row">
 	<div class="col-sm-6">
 	<div class="form-group">
-{!! Form::label('member_code','Member code') !!}
-{!! Form::text('member_code',$member_code,['class'=>'form-control', 'id' => 'member_code', ($member_number_mode == \constNumberingMode::Auto ? 'readonly' : '')]) !!}		
+{!! Form::label('member_code','Codigo') !!}
+{!! Form::text('member_code',null,['class'=>'form-control', 'id' => 'member_code']) !!}		
 	</div>
 	</div>
 
 	<div class="col-sm-6">
 	<div class="form-group">
-{!! Form::label('name','Name',['class'=>'control-label']) !!}
+{!! Form::label('name','Nombre',['class'=>'control-label']) !!}
 {!! Form::text('name',null,['class'=>'form-control', 'id' => 'name']) !!}		
 	</div>
 	</div>
