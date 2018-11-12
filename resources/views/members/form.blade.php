@@ -165,7 +165,7 @@
 			<div class="col-sm-12">
 				<div class="form-group">
 					{!! Form::label('pin_code','Pin Code',['class'=>'control-label']) !!}
-					{!! Form::text('pin_code',null,['class'=>'form-control', 'id' => 'pin_code']) !!}		
+					{!! Form::text('pin_code',$memberCounter,['class'=>'form-control', 'id' => 'pin_code', 'readonly' => 'true']) !!}		
 				</div>
 			</div>
 		</div>
@@ -177,4 +177,91 @@
 			{!! Form::textarea('address',null,['class'=>'form-control', 'id' => 'address', 'rows' => 5]) !!}		
 		</div>
 	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-12">
+		<h4>Medidas Corporales</h4>
+	</div>
+</div>
+<br>
+
+<div class="row">
+	<div class="col-sm-6">
+		<div class="form-group">
+			{!! Form::label('height','Altura (cm)') !!}
+			{!! Form::text('height',null,['class'=>'form-control', 'id' => 'height']) !!}									
+		</div>
+	</div>
+
+	<div class="col-sm-6">
+		<div class="form-group">
+			{!! Form::label('weight','Peso(kg)',['class'=>'control-label']) !!}
+			{!! Form::text('weight',null,['class'=>'form-control', 'id' => 'weight']) !!}		
+		</div>
+	</div>
+</div>
+<div class="row">
+			<div class="col-sm-6">
+				<div class="form-group">
+					{!! Form::label('shoulder_measurements','Hombros (cm)') !!}
+					{!! Form::text('shoulder_measurements',null,['class'=>'form-control', 'id' => 'shoulder_measurements']) !!}									
+				</div>
+			</div>
+
+
+			<div class="col-sm-6">
+				<div class="form-group">
+					{!! Form::label('chest_measurements','Pecho (cm)',['class'=>'control-label']) !!}
+					{!! Form::text('chest_measurements',null,['class'=>'form-control', 'id' => 'chest_measurements']) !!}		
+				</div>
+			</div>
+</div>
+<div class="row">
+			<div class="col-sm-6">
+				<div class="form-group">
+					{!! Form::label('arm_measurements','Brazos (cm)') !!}
+					{!! Form::text('arm_measurements',null,['class'=>'form-control', 'id' => 'arm_measurements']) !!}									
+				</div>
+			</div>
+
+
+			<div class="col-sm-6">
+				<div class="form-group">
+					{!! Form::label('forearm_measurements','Antebrazos (cm)',['class'=>'control-label']) !!}
+					{!! Form::text('forearm_measurements',null,['class'=>'form-control', 'id' => 'forearm_measurements']) !!}		
+				</div>
+			</div>
+</div>
+<div class="row">
+			<div class="col-sm-6">
+				<div class="form-group">
+					{!! Form::label('hip_measurements','Caderas (cm)') !!}
+					{!! Form::text('hip_measurements',null,['class'=>'form-control', 'id' => 'hip_measurements']) !!}									
+				</div>
+			</div>
+
+
+			<div class="col-sm-6">
+				<div class="form-group">
+					{!! Form::label('waist_measurements','Cintura (cm)',['class'=>'control-label']) !!}
+					{!! Form::text('waist_measurements',null,['class'=>'form-control', 'id' => 'waist_measurements']) !!}		
+				</div>
+			</div>
+</div>
+<div class="row">
+			<div class="col-sm-6">
+				<div class="form-group">
+					{!! Form::label('thigt_measurements','Muslos (cm)') !!}
+					{!! Form::text('thigt_measurements',null,['class'=>'form-control', 'id' => 'thigt_measurements']) !!}									
+				</div>
+			</div>
+
+
+			<div class="col-sm-6">
+				<div class="form-group">
+					{!! Form::label('calf_measurements','Pantorrillas (cm)',['class'=>'control-label']) !!}
+					{!! Form::text('calf_measurements',null,['class'=>'form-control', 'id' => 'calf_measurements']) !!}		
+				</div>
+			</div>
 </div>

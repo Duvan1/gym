@@ -25,6 +25,18 @@ class CreateMstMembersTable extends Migration
             $table->string('proof_photo', 50)->comment('photo of the proof');
             $table->char('gender', 50)->comment('member\'s gender');
             $table->string('contact', 11)->unique('contact')->comment('member\'s contact number');
+
+            $table->float('height')->nullable(); 
+            $table->float('weight')->nullable();
+            $table->float('shoulder_measurements')->nullable();
+            $table->float('chest_measurements')->nullable();
+            $table->float('arm_measurements')->nullable();
+            $table->float('forearm_measurements')->nullable();
+            $table->float('hip_measurements')->nullable();
+            $table->float('waist_measurements')->nullable();
+            $table->float('thigt_measurements')->nullable();
+            $table->float('calf_measurements')->nullable();
+            
             $table->string('emergency_contact', 11);
             $table->string('health_issues', 50);
             $table->integer('pin_code');
