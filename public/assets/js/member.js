@@ -12,239 +12,365 @@ var startDateValidators = {
 			member_code: {
 				validators: {
 					notEmpty: {
-						message: 'The member code is required and can\'t be empty'
+						message: 'El documento del miembro es obligatorio.'
+					},
+					regexp: {
+						regexp: /^[0-9\.]+$/,
+						message: 'Por favor solo ingrese números.'
 					}
 				}
 			},
 			name: {
 				validators: {
 					notEmpty: {
-						message: 'The name is required and can\'t be empty'
+						message: 'El nombre del miembro es obligatorio.'
 					},
 					stringLength: {
                         max: 50,
-                        message: 'It must be less than 50 characters'
+                        message: 'ingrese menos de 50 caracteres.'
                     }
 				}
 			},
 			address: {
 				validators: {
 					notEmpty: {
-						message: 'The address is required and can\'t be empty'
+						message: 'El nombre del miembro es obligatorio.'
 					},
 					stringLength: {
                         max: 200,
-                        message: 'It must be less than 200 characters'
+                        message: 'ingrese menos de 200 caracteres.'
                     }
 				}
 			},
 			email: {
 				validators: {
 					notEmpty: {
-						message: 'The email address is required and can\'t be empty'
+						message: 'El correo del miembro es obligatorio.'
 					},
 					emailAddress: {
-						message: 'The input is not a valid email address'
+						message: 'No es un correo valido.'
 					},
 					stringLength: {
                         max: 50,
-                        message: 'It must be less than 50 characters'
+                        message: 'ingrese menos de 50 caracteres.'
                     }
 				}
 			},
 			DOB: {
 				validators: {
 					notEmpty: {
-						message: 'The date of birth is required'
+						message: 'La fecha de nacimiento del miembro es obligatorio.'
 					},
 					date: {
                         format: 'YYYY-MM-DD',
-                        message: 'The date should be in YYYY-MM-DD format'
+                        message: 'La fecha debe tener el siguiente formato: YYYY-MM-DD'
                     }
 				}
 			},
 			status: {
 				validators: {
 					notEmpty: {
-						message: 'The status is required and can\'t be empty'
+						message: 'El estado del miembro es obligatorio.'
 					}
 				}
 			},
 			health_issues: {
 				validators: {
 					notEmpty: {
-						message: 'This field required and can\'t be empty'
+						message: 'Este campo es obligatorio.'
 					}
 				}
 			},
 			proof_name: {
 				validators: {
 					notEmpty: {
-						message: 'The proof name is required and can\'t be empty'
+						message: 'Este campo es obligatorio.'
 					},
 					stringLength: {
                         max: 50,
-                        message: 'It must be less than 50 characters'
+                        message: 'ingrese menos de 50 caracteres.'
                     }
 				}
 			},
 			gender: {
 				validators: {
 					notEmpty: {
-						message: 'The gender is required and can\'t be empty'
+						message: 'Este campo es obligatorio.'
 					}
 				}
 			},
 			plan_id: {
 				validators: {
 					notEmpty: {
-						message: 'The plan id is required and can\'t be empty'
+						message: 'Este campo es obligatorio.'
 					}
 				}
 			},
 			pin_code: {
 				validators: {
 					notEmpty: {
-						message: 'The Pin Code is required and can\'t be empty'
+						message: 'Este campo es obligatorio.'
 					},
 					regexp: {
 						regexp: /^[0-9\.]+$/,
-						message: 'The input is not a valid pin code'
+						message: 'Ingrese solo datos numericos.'
 					}
 				}
 			},
 			occupation: {
 				validators: {
 					notEmpty: {
-						message: 'The occupation is required and can\'t be empty'
+						message: 'Este campo es obligatorio.'
 					},
 					stringLength: {
                         max: 50,
-                        message: 'It must be less than 50 characters'
+                        message: 'ingrese menos de 50 caracteres.'
                     }
 				}
 			},
 			aim: {
 				validators: {
 					notEmpty: {
-						message: 'The aim is required and can\'t be empty'
+						message: 'Este campo es obligatorio.'
 					},
 					stringLength: {
                         max: 50,
-                        message: 'It must be less than 50 characters'
+                        message: 'ingrese menos de 50 caracteres.'
                     }
 				}
 			},
 			source: {
 				validators: {
 					notEmpty: {
-						message: 'The source is required and can\'t be empty'
+						message: 'Este campo es obligatorio.'
 					},
 					stringLength: {
                         max: 50,
-                        message: 'It must be less than 50 characters'
+                        message: 'ingrese menos de 50 caracteres.'
                     }
 				}
 			},
+			//medidas
+			height: {
+				validators: {
+					regexp: {
+						regexp: /^[0-9]+([,][0-9]+)?$/,
+						message: 'Formato no valido'
+					},
+					stringLength: {
+                        max: 8,
+                        message: 'Ingrse menos de 8 caracteres'
+                    }
+				}
+			},
+			weight: {
+				validators: {
+					regexp: {
+						regexp: /^[0-9]+([,][0-9]+)?$/,
+						message: 'Formato no valido'
+					},
+					stringLength: {
+                        max: 8,
+                        message: 'Ingrse menos de 8 caracteres'
+                    }
+				}
+			},
+			shoulder_measurements: {
+				validators: {
+					regexp: {
+						regexp: /^[0-9]+([,][0-9]+)?$/,
+						message: 'Formato no valido'
+					},
+					stringLength: {
+                        max: 8,
+                        message: 'Ingrse menos de 8 caracteres'
+                    }
+				}
+			},
+			chest_measurements: {
+				validators: {
+					regexp: {
+						regexp: /^[0-9]+([,][0-9]+)?$/,
+						message: 'Formato no valido'
+					},
+					stringLength: {
+                        max: 8,
+                        message: 'Ingrse menos de 8 caracteres'
+                    }
+				}
+			},
+			arm_measurements: {
+				validators: {
+					regexp: {
+						regexp: /^[0-9]+([,][0-9]+)?$/,
+						message: 'Formato no valido'
+					},
+					stringLength: {
+                        max: 8,
+                        message: 'Ingrse menos de 8 caracteres'
+                    }
+				}
+			},
+			forearm_measurements: {
+				validators: {
+					regexp: {
+						regexp: /^[0-9]+([,][0-9]+)?$/,
+						message: 'Formato no valido'
+					},
+					stringLength: {
+                        max: 8,
+                        message: 'Ingrse menos de 8 caracteres'
+                    }
+				}
+			},
+			hip_measurements: {
+				validators: {
+					regexp: {
+						regexp: /^[0-9]+([,][0-9]+)?$/,
+						message: 'Formato no valido'
+					},
+					stringLength: {
+                        max: 8,
+                        message: 'Ingrse menos de 8 caracteres'
+                    }
+				}
+			},
+			waist_measurements: {
+				validators: {
+					regexp: {
+						regexp: /^[0-9]+([,][0-9]+)?$/,
+						message: 'Formato no valido'
+					},
+					stringLength: {
+                        max: 8,
+                        message: 'Ingrse menos de 8 caracteres'
+                    }
+				}
+			},
+			thigt_measurements: {
+				validators: {
+					regexp: {
+						regexp: /^[0-9]+([,][0-9]+)?$/,
+						message: 'Formato no valido'
+					},
+					stringLength: {
+                        max: 8,
+                        message: 'Ingrse menos de 8 caracteres'
+                    }
+				}
+			},
+			calf_measurements: {
+				validators: {
+					regexp: {
+						regexp: /^[0-9]+([,][0-9]+)?$/,
+						message: 'Formato no valido.'
+					},
+					stringLength: {
+                        max: 8,
+                        message: 'Ingrse menos de 8 caracteres'
+                    }
+				}
+			},
+			//medidas
 			invoice_number: {
 				validators: {
 					notEmpty: {
-						message: 'The invoice number is required and can\'t be empty'
+						message: 'Este campo es obligatorio.'
 					}
 				}
 			},
 			admission_amount: {
 				validators: {
 					notEmpty: {
-						message: 'The admission amount is required and can\'t be empty'
+						message: 'Este campo es obligatorio.'
 					},
 					regexp: {
 						regexp: /^[0-9\.]+$/,
-						message: 'The input is not a valid amount'
+						message: 'Ingrese solo numeros.'
 					}
 				}
 			},
 			subscription_amount: {
 				validators: {
 					notEmpty: {
-						message: 'The subscription amount is required and can\'t be empty'
+						message: 'Este campo es obligatorio.'
 					},
 					regexp: {
 						regexp: /^[0-9\.]+$/,
-						message: 'The input is not a valid amount'
+						message: 'Ingrese solo numeros'
 					}
 				}
 			},
 			taxes_amount: {
 				validators: {
 					notEmpty: {
-						message: 'The taxes amount is required and can\'t be empty'
+						message: 'Este campo es obligatorio.'
 					},
 					regexp: {
 						regexp: /^[0-9\.]+$/,
-						message: 'The input is not a valid amount'
+						message: 'Ingrese solo numeros'
 					}
 				}
 			},
 			payment_amount: {
 				validators: {
 					notEmpty: {
-						message: 'The amount is required and can\'t be empty'
+						message: 'Este campo es obligatorio.'
 					},
 					regexp: {
 						regexp: /^[0-9\.]+$/,
-						message: 'The input is not a valid amount'
+						message: 'Ingrese solo numeros'
 					}
 				}
 			},
 			invoice_id: {
 				  validators: {
 					  notEmpty: {
-						message: 'The invoice number is required and can\'t be empty'
+						message: 'Este campo es obligatorio.'
 					}
 				}
 			},
 			date: {
 				  validators: {
 					  notEmpty: {
-						message: 'The cheque date is required and can\'t be empty'
+						message: 'Este campo es obligatorio.'
 					}
 				}
 			},
 			number: {
 				  validators: {
 					  notEmpty: {
-						message: 'The cheque number is required and can\'t be empty'
+						message: 'Este campo es obligatorio.'
 					}
 				}
 			},
 			contact: {
 				validators: {
 					notEmpty: {
-						message: 'The contact is required and can\'t be empty'
+						message: 'Este campo es obligatorio.'
 					},
 					regexp: {
 						regexp: /^[0-9\.]+$/,
-						message: 'The input is not a valid number'
+						message: 'Ingrese solo numeros'
 					},
 					stringLength: {
-                        max: 10,
-                        message: 'It must be less than 10 characters'
+                        max: 12,
+                        message: 'Ingrse menos de 12 caracteres'
                     }
 				}
 			},
 			emergency_contact: {
 				validators: {
 					notEmpty: {
-						message: 'The contact is required and can\'t be empty'
+						message: 'Este campo es obligatorio.'
 					},
 					regexp: {
 						regexp: /^[0-9\.]+$/,
-						message: 'The input is not a valid number'
+						message: 'Ingrese solo numeros'
 					},
 					stringLength: {
-                        max: 10,
-                        message: 'It must be less than 10 characters'
+                        max: 12,
+                        message: 'Ingrse menos de 12 caracteres'
                     }
 				}
 			},
