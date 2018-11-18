@@ -247,6 +247,201 @@
 							</div>
 
 						</div>   <!-- End Of Main Row -->
+						<!--######################### Medidas the member ################################# -->
+						<div class="row">
+							<div class="col-md-12"><!-- Main Col -->
+								<div class="panel no-border ">
+									<div class="panel-title">
+										<div class="panel-head font-size-20">Medidas del miembro</div>
+									</div>
+									<div class="panel-body">
+										<div class="row">	
+											<div class="col-sm-2">
+											</div>			<!--Main row start-->
+											<div class="col-sm-4">			<!-- Outer Row Start -->
+
+												<!-- Spacer -->
+												<div class="row visible-md visible-lg">
+													<div class="col-sm-4">
+														<label>&nbsp;</label>
+													</div>
+												</div>
+
+												<div class="row">
+													<div class="col-sm-4">
+														<label>Altura</label>
+													</div>
+													<div class="col-sm-8">
+														<span class="show-data">{{$member->height}} Cm</span>
+													</div>
+												</div>
+
+												<hr class="margin-top-0 margin-bottom-10">
+												<!-- Spacer -->
+												<div class="row visible-md visible-lg">
+													<div class="col-sm-4">
+														<label>&nbsp;</label>
+													</div>
+												</div>
+
+												<div class="row">
+													<div class="col-sm-4">
+														<label>Hombros:</label>
+													</div>
+													<div class="col-sm-8">
+														<span class="show-data">{{$member->shoulder_measurements}} Cm</span>
+													</div>
+												</div>
+
+												<hr class="margin-top-0 margin-bottom-10">
+												<!-- Spacer -->
+												<div class="row visible-md visible-lg">
+													<div class="col-sm-4">
+														<label>&nbsp;</label>
+													</div>
+												</div>
+
+												<div class="row">
+													<div class="col-sm-4">
+														<label>Brazos:</label>
+													</div>
+													<div class="col-sm-8">
+														<span class="show-data">{{$member->arm_measurements}} Cm</span>
+													</div>
+												</div>
+
+												<hr class="margin-top-0 margin-bottom-10">
+												<!-- Spacer -->
+												<div class="row visible-md visible-lg">
+													<div class="col-sm-4">
+														<label>&nbsp;</label>
+													</div>
+												</div>
+
+												<div class="row">
+													<div class="col-sm-4">
+														<label>Cintura:</label>
+													</div>
+													<div class="col-sm-8">
+														<span class="show-data">{{$member->waist_measurements}} Cm</span>
+													</div>
+												</div>
+
+												<hr class="margin-top-0 margin-bottom-10">
+												<!-- Spacer -->
+												<div class="row visible-md visible-lg">
+													<div class="col-sm-4">
+														<label>&nbsp;</label>
+													</div>
+												</div>
+
+												<div class="row">
+													<div class="col-sm-4">
+														<label>Muslos:</label>
+													</div>
+													<div class="col-sm-8">
+														<span class="show-data">{{$member->thigt_measurements}} Cm</span>
+													</div>
+												</div>
+
+												<hr class="margin-top-0 margin-bottom-10">
+											</div>
+
+											<div class="col-sm-4">			<!-- Outer Row Start -->
+
+												<!-- Spacer -->
+												<div class="row visible-md visible-lg">
+													<div class="col-sm-4">
+														<label>&nbsp;</label>
+													</div>
+												</div>
+
+												<div class="row">
+													<div class="col-sm-4">
+														<label>Peso</label>
+													</div>
+													<div class="col-sm-8">
+														<span class="show-data">{{$member->weight}} Kg</span>
+													</div>
+												</div>
+
+												<hr class="margin-top-0 margin-bottom-10">
+												<!-- Spacer -->
+												<div class="row visible-md visible-lg">
+													<div class="col-sm-4">
+														<label>&nbsp;</label>
+													</div>
+												</div>
+
+												<div class="row">
+													<div class="col-sm-4">
+														<label>Pecho:</label>
+													</div>
+													<div class="col-sm-8">
+														<span class="show-data">{{$member->chest_measurements}} Cm</span>
+													</div>
+												</div>
+
+												<hr class="margin-top-0 margin-bottom-10">
+												<!-- Spacer -->
+												<div class="row visible-md visible-lg">
+													<div class="col-sm-4">
+														<label>&nbsp;</label>
+													</div>
+												</div>
+
+												<div class="row">
+													<div class="col-sm-4">
+														<label>Antebrazos:</label>
+													</div>
+													<div class="col-sm-8">
+														<span class="show-data">{{$member->forearm_measurements}} Cm</span>
+													</div>
+												</div>
+
+												<hr class="margin-top-0 margin-bottom-10">
+												<!-- Spacer -->
+												<div class="row visible-md visible-lg">
+													<div class="col-sm-4">
+														<label>&nbsp;</label>
+													</div>
+												</div>
+
+												<div class="row">
+													<div class="col-sm-4">
+														<label>Caderas:</label>
+													</div>
+													<div class="col-sm-8">
+														<span class="show-data">{{$member->hip_measurements}} Cm</span>
+													</div>
+												</div>
+
+												<hr class="margin-top-0 margin-bottom-10">
+												<!-- Spacer -->
+												<div class="row visible-md visible-lg">
+													<div class="col-sm-4">
+														<label>&nbsp;</label>
+													</div>
+												</div>
+
+												<div class="row">
+													<div class="col-sm-4">
+														<label>Pantorrillas:</label>
+													</div>
+													<div class="col-sm-8">
+														<span class="show-data">{{$member->calf_measurements}} Cm</span>
+													</div>
+												</div>
+
+												<hr class="margin-top-0 margin-bottom-10">
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--######################### Medidas the member ################################# -->
 					</div>
 				</div>
 			</div>

@@ -165,7 +165,7 @@
 			<div class="col-sm-12">
 				<div class="form-group">
 					{!! Form::label('pin_code','Pin Code',['class'=>'control-label']) !!}
-					{!! Form::text('pin_code',$memberCounter,['class'=>'form-control', 'id' => 'pin_code', 'readonly' => 'true']) !!}		
+					{!! Form::text('pin_code',null,['class'=>'form-control', 'id' => 'pin_code']) !!}		
 				</div>
 			</div>
 		</div>
