@@ -48,7 +48,7 @@ class AclController extends Controller
 
         // Adding Photo
         if ($request->hasFile('photo')) {
-            $user->addMedia($request->file('photo'))->usingFileName('staff_'.$user->id.$request->photo->getClientOriginalExtension())->toCollection('staff');
+            $user->addMedia($request->file('photo'))->usingFileName('staff_'.$user->id.'.'.$request->photo->getClientOriginalExtension())->toCollection('staff');
         }
         $user->save();
 
@@ -84,7 +84,7 @@ class AclController extends Controller
 
         if ($request->hasFile('photo')) {
             $user->clearMediaCollection('staff');
-            $user->addMedia($request->file('photo'))->usingFileName('staff_'.$user->id.$request->photo->getClientOriginalExtension())->toCollection('staff');
+            $user->addMedia($request->file('photo'))->usingFileName('staff_'.$user->id.'.'.$request->photo->getClientOriginalExtension())->toCollection('staff');
         }
         $user->save();
 

@@ -10,7 +10,7 @@
 	<div class="col-sm-6">
 		<div class="form-group">
 			{!! Form::label('member_code','Codigo') !!}
-			{!! Form::text('member_code',null,['class'=>'form-control', 'id' => 'member_code']) !!}		
+			{!! Form::text('member_code',$member_code,['class'=>'form-control', 'id' => 'member_code', ($member_number_mode == \constNumberingMode::Auto ? 'readonly' : '')]) !!}		
 		</div>
 	</div>
 

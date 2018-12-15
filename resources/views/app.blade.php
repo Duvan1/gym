@@ -64,6 +64,7 @@
 			<div class="sidebar">
 				<!-- BEGIN RPOFILE -->
 				<div class="nav-profile">
+					
 					<div class="thumb">
 						<?php
 						$media = Auth::user()->getMedia();
