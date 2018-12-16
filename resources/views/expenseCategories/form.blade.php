@@ -10,9 +10,9 @@
 <div class="row">
 	<div class="col-sm-6">
 		<div class="form-group">
-			{!! Form::label('status','Status') !!}
+			{!! Form::label('status','Estado') !!}
 			<!--0 for inactive , 1 for active-->
-			{!! Form::select('status',array('1' => 'Active', '0' => 'InActive'),null,['class' => 'form-control', 'id' => 'status']) !!}		
+			{!! Form::select('status',array('1' => 'Activo', '0' => 'Inactivo'),null,['class' => 'form-control', 'id' => 'status']) !!}		
 		</div>							
 	</div>									
 </div>

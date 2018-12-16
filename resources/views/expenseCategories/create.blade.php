@@ -25,7 +25,7 @@
           <div class="panel-body">
             {!! Form::Open(['url' => 'expenses/categories', 'id' => 'expensecategoriesform']) !!}
 
-            @include('expenseCategories.form',['submitButtonText' => 'Add'])
+            @include('expenseCategories.form',['submitButtonText' => 'Agregar'])
 
             {!! Form::Close() !!}
           </div>

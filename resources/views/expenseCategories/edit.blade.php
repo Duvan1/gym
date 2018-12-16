@@ -13,7 +13,7 @@
           <div class="panel-body">
             {!! Form::model($expenseCategory, ['method' => 'POST','action' => ['ExpenseCategoriesController@update',$expenseCategory->id], 'id' => 'expensecategoriesform']) !!}
 
-            @include('expenseCategories.form',['submitButtonText' => 'Update'])
+            @include('expenseCategories.form',['submitButtonText' => 'Actualizar'])
 
             {!! Form::Close() !!}
           </div>
