@@ -28,7 +28,7 @@
             <div class="row">
               <div class="col-sm-6">
                 <div class="form-group">
-                  {!! Form::label('name','Name') !!}
+                  {!! Form::label('name','Nombre') !!}
                   {!! Form::text('name',$user->name,['class'=>'form-control', 'id' => 'name']) !!}       
                 </div>                          
               </div>                          
@@ -44,7 +44,7 @@
             <div class="row">
               <div class="col-sm-6">
                 <div class="form-group">
-                  {!! Form::label('status','Status') !!}
+                  {!! Form::label('status','Estado') !!}
                   <!--0 for inactive , 1 for active-->
                   {!! Form::select('status',array('1' => 'Active', '0' => 'InActive'),$user->status,['class' => 'form-control', 'id' => 'status']) !!}     
                 </div>  
@@ -57,7 +57,7 @@
               ?>                                   
               <div class="col-sm-4">
                 <div class="form-group">
-                  {!! Form::label('photo','Photo') !!}
+                  {!! Form::label('photo','Foto') !!}
                   {!! Form::file('photo',['class'=>'form-control', 'id' => 'photo']) !!}  
                 </div>                              
               </div>
@@ -67,7 +67,7 @@
               @else
               <div class="col-sm-6">
                 <div class="form-group">
-                  {!! Form::label('photo','Photo') !!}
+                  {!! Form::label('photo','Foto') !!}
                   {!! Form::file('photo',['class'=>'form-control', 'id' => 'photo']) !!}  
                 </div>                              
               </div>
@@ -77,14 +77,14 @@
             <div class="row">
               <div class="col-sm-6">
                 <div class="form-group">
-                  {!! Form::label('password','Password') !!}
+                  {!! Form::label('password','Contraseña') !!}
                   {!! Form::password('password',['class'=>'form-control', 'id' => 'password']) !!}        
                 </div>  
               </div>  
 
               <div class="col-sm-6">
                 <div class="form-group">
-                  {!! Form::label('password_confirmation','Confirm Password') !!}
+                  {!! Form::label('password_confirmation','Confirmar contraseña') !!}
                   {!! Form::password('password_confirmation',['class'=>'form-control', 'id' => 'password_confirmation']) !!}      
                 </div>                      
               </div>                              
@@ -104,7 +104,7 @@
                   $withoutGymie = App\Role::where('name','!=','Gymie')->lists('name', 'id'); 
                   $withGymie = App\Role::lists('name','id');
                   ?>
-                  {!! Form::label('Role') !!}
+                  {!! Form::label('Rol') !!}
                   {!! Form::select('role_id',(Auth::User()->hasRole('Gymie') ? $withGymie : $withoutGymie),$user->role_user->role_id,['class'=>'form-control selectpicker show-tick', 'id' => 'role_id']) !!}
                 </div>                              
               </div>
@@ -115,7 +115,7 @@
         <div class="row">
           <div class="col-sm-2 pull-right">
             <div class="form-group">
-              {!! Form::submit('Update', ['class' => 'btn btn-primary pull-right']) !!}
+              {!! Form::submit('Actualizar', ['class' => 'btn btn-primary pull-right']) !!}
             </div>
           </div>
         </div>

@@ -29,28 +29,28 @@
           <div class="row">
             <div class="col-sm-3">
               <div class="form-group">
-                {!! Form::label('name','Name') !!}
+                {!! Form::label('name','Nombre') !!}
                 {!! Form::text('name',null,['class'=>'form-control', 'id' => 'name']) !!}       
               </div>                          
             </div>
 
             <div class="col-sm-3">
               <div class="form-group">
-                {!! Form::label('display_name','Display Name') !!}
+                {!! Form::label('display_name','Nombre para mostrar') !!}
                 {!! Form::text('display_name',null,['class'=>'form-control', 'id' => 'display_name']) !!}       
               </div>                          
             </div>                          
 
             <div class="col-sm-3">
               <div class="form-group">
-                {!! Form::label('description','Description') !!}
+                {!! Form::label('description','Descripción') !!}
                 {!! Form::text('description',null,['class'=>'form-control', 'id' => 'description']) !!}     
               </div>                          
             </div>
 
             <div class="col-sm-3">
               <div class="form-group">
-                {!! Form::label('group_key','Group key') !!}
+                {!! Form::label('group_key','Clave de grupo') !!}
                 {!! Form::text('group_key',null,['class'=>'form-control', 'id' => 'group_key']) !!}     
               </div>                          
             </div>                              
@@ -61,7 +61,7 @@
       <div class="row">
         <div class="col-sm-2 pull-right">
           <div class="form-group">
-            {!! Form::submit('Create', ['class' => 'btn btn-primary pull-right']) !!}
+            {!! Form::submit('Crear', ['class' => 'btn btn-primary pull-right']) !!}
           </div>
         </div>
       </div>

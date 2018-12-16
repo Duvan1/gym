@@ -29,21 +29,21 @@
           <div class="row">
             <div class="col-sm-4">
               <div class="form-group">
-                {!! Form::label('name','Name') !!}
+                {!! Form::label('name','Nombre') !!}
                 {!! Form::text('name',$role->name,['class'=>'form-control', 'id' => 'name']) !!}       
               </div>                          
             </div>                          
 
             <div class="col-sm-4">
               <div class="form-group">
-                {!! Form::label('display_name','Display name') !!}
+                {!! Form::label('display_name','Nombre para mostrar') !!}
                 {!! Form::text('display_name',$role->display_name,['class'=>'form-control', 'id' => 'display_name']) !!}     
               </div>                          
             </div>                              
 
             <div class="col-sm-4">
               <div class="form-group">
-                {!! Form::label('description','Description') !!}
+                {!! Form::label('description','Descripción') !!}
                 {!! Form::text('description',$role->description,['class'=>'form-control', 'id' => 'description']) !!}        
               </div>  
             </div>                               
@@ -76,7 +76,7 @@
       <div class="row">
         <div class="col-sm-2 pull-right">
           <div class="form-group">
-            {!! Form::submit('Update', ['class' => 'btn btn-primary pull-right']) !!}
+            {!! Form::submit('Actualizar', ['class' => 'btn btn-primary pull-right']) !!}
           </div>
         </div>
       </div>
