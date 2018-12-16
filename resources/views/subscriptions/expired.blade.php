@@ -29,7 +29,7 @@
 
                     <div class="col-sm-3">
 
-                      {!! Form::label('subscription-daterangepicker','Date range') !!}
+                      {!! Form::label('subscription-daterangepicker','Rango de fechas') !!}
 
                       <div id="subscription-daterangepicker" class="gymie-daterangepicker btn bg-grey-50 daterange-padding no-border color-grey-600 hidden-xs no-shadow">
                        <i class="ion-calendar margin-right-10"></i>                                             
@@ -42,23 +42,23 @@
                    </div>
 
                    <div class="col-sm-2">                                        
-                    {!! Form::label('sort_field','Sort By') !!}
+                    {!! Form::label('sort_field','Ordenar por') !!}
                     {!! Form::select('sort_field',array('created_at' => 'Date','plan_name' => 'Plan name'),old('sort_field'),['class' => 'form-control selectpicker show-tick show-menu-arrow', 'id' => 'sort_field']) !!}
                   </div>
 
                   <div class="col-sm-2">                                        
-                    {!! Form::label('sort_direction','Order') !!}
-                    {!! Form::select('sort_direction',array('desc' => 'Descending','asc' => 'Ascending'),old('sort_direction'),['class' => 'form-control selectpicker show-tick show-menu-arrow', 'id' => 'sort_direction']) !!}</span>
+                    {!! Form::label('sort_direction','Orden') !!}
+                    {!! Form::select('sort_direction',array('desc' => 'Descendente','asc' => 'Ascendente'),old('sort_direction'),['class' => 'form-control selectpicker show-tick show-menu-arrow', 'id' => 'sort_direction']) !!}</span>
                   </div>
 
                   <div class="col-xs-3">  
-                    {!! Form::label('search','Keyword') !!}                                                                              
-                    <input value="{{ old('search') }}" name="search" id="search" type="text" class="form-control padding-right-35" placeholder="Search...">                                                                                                                               
+                    {!! Form::label('search','Busqueda') !!}                                                                              
+                    <input value="{{ old('search') }}" name="search" id="search" type="text" class="form-control padding-right-35" placeholder="Buscar...">                                                                                                                               
                   </div>
 
                   <div class="col-xs-2">  
                     {!! Form::label('&nbsp;') !!}  <br/>                                                                            
-                    <button type="submit" class="btn btn-primary active no-border">GO</button>
+                    <button type="submit" class="btn btn-primary active no-border">Buscar</button>
                   </div>
 
                   {!! Form::Close() !!}

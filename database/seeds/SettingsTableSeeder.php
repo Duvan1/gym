@@ -64,7 +64,7 @@ class SettingsTableSeeder extends Seeder
             ],
             [
                 'key' => 'member_number_mode',
-                'value' => '1',
+                'value' => '0',
             ],
             [
                 'key' => 'last_membership_check',

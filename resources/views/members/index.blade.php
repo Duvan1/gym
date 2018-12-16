@@ -9,7 +9,7 @@
     @include('flash::message')
     <h1 class="page-title no-line-height">Members
       @permission(['manage-gymie','manage-members','add-member'])
-      <a href="{{ action('MembersController@create') }}" class="page-head-btn btn-sm btn-primary active" role="button">Add New</a>
+      <a href="{{ action('MembersController@create') }}" class="page-head-btn btn-sm btn-primary active" role="button">Agregar</a>
       <small>Detalles de todos los miembros del gimnasio</small></h1>
       @permission(['manage-gymie','pagehead-stats'])
       <h1 class="font-size-30 text-right color-blue-grey-600 animated fadeInDown total-count pull-right"><span  data-toggle="counter" data-start="0" data-from="0" data-to="{{ $count }}" data-speed="600" data-refresh-interval="10"></span> <small class="color-blue-grey-600 display-block margin-top-5 font-size-14">Total de Miembros</small></h1>
@@ -30,7 +30,7 @@
 
                     <div class="col-sm-3">
 
-                      {!! Form::label('member-daterangepicker','Date range') !!}
+                      {!! Form::label('member-daterangepicker','Rango de fecha') !!}
 
                       <div id="member-daterangepicker" class="gymie-daterangepicker btn bg-grey-50 daterange-padding no-border color-grey-600 hidden-xs no-shadow">
                        <i class="ion-calendar margin-right-10"></i>                                             
@@ -43,23 +43,23 @@
                    </div>
 
                    <div class="col-sm-2">                                        
-                    {!! Form::label('sort_field','Sort By') !!}
-                    {!! Form::select('sort_field',array('created_at' => 'Date','name' => 'Name', 'member_code' => 'Member code', 'status' => 'Status'),old('sort_field'),['class' => 'form-control selectpicker show-tick show-menu-arrow', 'id' => 'sort_field']) !!}
+                    {!! Form::label('sort_field','Ordenar por') !!}
+                    {!! Form::select('sort_field',array('created_at' => 'Fecha','name' => 'Nombre', 'member_code' => 'Codigo', 'status' => 'Estado'),old('sort_field'),['class' => 'form-control selectpicker show-tick show-menu-arrow', 'id' => 'sort_field']) !!}
                   </div>
 
                   <div class="col-sm-2">                                        
-                    {!! Form::label('sort_direction','Order') !!}
-                    {!! Form::select('sort_direction',array('desc' => 'Descending','asc' => 'Ascending'),old('sort_direction'),['class' => 'form-control selectpicker show-tick show-menu-arrow', 'id' => 'sort_direction']) !!}</span>
+                    {!! Form::label('sort_direction','Orden') !!}
+                    {!! Form::select('sort_direction',array('desc' => 'Descendente','asc' => 'Ascendente'),old('sort_direction'),['class' => 'form-control selectpicker show-tick show-menu-arrow', 'id' => 'sort_direction']) !!}</span>
                   </div>
 
                   <div class="col-xs-3">  
-                    {!! Form::label('search','Keyword') !!}                                                                              
-                    <input value="{{ old('search') }}" name="search" id="search" type="text" class="form-control padding-right-35" placeholder="Search...">                                                                                                                               
+                    {!! Form::label('search','Busqueda') !!}                                                                              
+                    <input value="{{ old('search') }}" name="search" id="search" type="text" class="form-control padding-right-35" placeholder="Buscar...">                                                                                                                               
                   </div>
 
                   <div class="col-xs-2">  
                     {!! Form::label('&nbsp;') !!}  <br/>                                                                            
-                    <button type="submit" class="btn btn-primary active no-border">GO</button>
+                    <button type="submit" class="btn btn-primary active no-border">Buscar</button>
                   </div>
 
                   {!! Form::Close() !!}

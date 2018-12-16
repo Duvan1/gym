@@ -9,14 +9,14 @@
 				<div class="row">
 					<div class="col-sm-4">
 						<div class="form-group">
-							{!! Form::label('invoice_number','Invoice Number') !!}
+							{!! Form::label('invoice_number','Numero de la factura') !!}
 							{!! Form::text('invoice_number',$invoice_number,['class'=>'form-control', 'id' => 'invoice_number', ($invoice_number_mode == \constNumberingMode::Auto ? 'readonly' : '')]) !!}		
 						</div>
 					</div>
 
 					<div class="col-sm-4">
 						<div class="form-group">
-							{!! Form::label('subscription_amount','Gym subscription fee') !!}
+							{!! Form::label('subscription_amount','Cuota de suscripción al gimnasio') !!}
 							<div class="input-group">
 								<div class="input-group-addon"><i class="fa fa-inr"></i></div>
 								{!! Form::text('subscription_amount',null,['class'=>'form-control', 'id' => 'subscription_amount','readonly' => 'readonly']) !!}		
@@ -26,7 +26,7 @@
 
 					<div class="col-sm-4">
 						<div class="form-group">
-							{!! Form::label('taxes_amount',sprintf('Tax @ %s %%',Utilities::getSetting('taxes'))) !!}
+							{!! Form::label('taxes_amount',sprintf('Impuesto @ %s %%',Utilities::getSetting('taxes'))) !!}
 							<div class="input-group">
 								<div class="input-group-addon"><i class="fa fa-inr"></i></div>
 								{!! Form::text('taxes_amount',0,['class'=>'form-control', 'id' => 'taxes_amount','readonly' => 'readonly']) !!}		
@@ -38,7 +38,7 @@
 				<div class="row">
 					<div class="col-sm-4">
 						<div class="form-group">
-							{!! Form::label('discount_percent','Discount') !!}
+							{!! Form::label('discount_percent','Descuento') !!}
 							<?php 
 							$discounts = explode(",",str_replace(" ","",(Utilities::getSetting('discounts'))));
 							$discounts_list = array_combine($discounts, $discounts);
@@ -54,7 +54,7 @@
 					</div>
 					<div class="col-sm-4">
 						<div class="form-group">
-							{!! Form::label('discount_amount','Discount amount') !!}
+							{!! Form::label('discount_amount','Cantidad descontada') !!}
 							<div class="input-group">
 								<div class="input-group-addon"><i class="fa fa-inr"></i></div>
 								{!! Form::text('discount_amount',null,['class'=>'form-control', 'id' => 'discount_amount','readonly' => 'readonly']) !!}		
@@ -63,7 +63,7 @@
 					</div>
 					<div class="col-sm-4">
 						<div class="form-group">
-							{!! Form::label('discount_note','Discount note') !!}
+							{!! Form::label('discount_note','Razon del descuento') !!}
 							{!! Form::text('discount_note',null,['class'=>'form-control', 'id' => 'discount_note']) !!}		
 						</div>
 					</div>

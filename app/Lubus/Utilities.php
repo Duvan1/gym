@@ -108,19 +108,19 @@ class Utilities
             break;
 
         case '2':
-            return 'Body Building';
+            return 'Culturismo';
             break;
 
         case '3':
-            return 'Fatloss';
+            return 'Perder peso';
             break;
 
         case '4':
-            return 'Weightgain';
+            return 'Ganar peso';
             break;
 
         case '5':
-            return 'Others';
+            return 'Otros';
             break;
 
         default:
@@ -210,27 +210,27 @@ class Utilities
     {
         switch ($occupation) {
         case '1':
-            return 'Housewife';
+            return 'Ama de casa';
             break;
 
         case '2':
-            return 'Self Employed';
+            return 'Trabajador indeoendiente';
             break;
 
         case '3':
-            return 'Professional';
+            return 'Profesional';
             break;
 
         case '4':
-            return 'Freelancer';
+            return 'Persona de libre dedicación';
             break;
 
         case '5':
-            return 'Others';
+            return 'Otros';
             break;
 
         default:
-            return 'Student';
+            return 'Estudiante';
             break;
     }
     }
@@ -240,15 +240,15 @@ class Utilities
     {
         switch ($source) {
         case '1':
-            return 'Word of mouth';
+            return 'Boca a boca';
             break;
 
         case '2':
-            return 'Others';
+            return 'Otros';
             break;
 
         default:
-            return 'Promotions';
+            return 'Promociones';
             break;
     }
     }
@@ -258,15 +258,15 @@ class Utilities
     {
         switch ($status) {
         case '0':
-            return 'Inactive';
+            return 'Inactivo';
             break;
 
         case '2':
-            return 'Archived';
+            return 'Archivado';
             break;
 
         default:
-            return 'Active';
+            return 'Activo';
             break;
     }
     }
@@ -276,15 +276,15 @@ class Utilities
     {
         switch ($status) {
         case '0':
-            return 'Lost';
+            return 'Perdida';
             break;
 
         case '2':
-            return 'Member';
+            return 'Miembro';
             break;
 
         default:
-            return 'Lead';
+            return 'Dirigir';
             break;
     }
     }
@@ -328,19 +328,19 @@ class Utilities
     {
         switch ($status) {
         case '1':
-            return 'Paid';
+            return 'Pagado';
             break;
 
         case '2':
-            return 'Partial';
+            return 'Parcial';
             break;
 
         case '3':
-            return 'Overpaid';
+            return 'Exceso';
             break;
 
         default:
-            return 'Unpaid';
+            return 'No pagado';
             break;
     }
     }
@@ -350,19 +350,19 @@ class Utilities
     {
         switch ($status) {
         case '0':
-            return 'Expired';
+            return 'Caducado';
             break;
 
         case '2':
-            return 'Renewed';
+            return 'Renovado';
             break;
 
         case '3':
-            return 'Cancelled';
+            return 'Cancelado';
             break;
 
         default:
-            return 'OnGoing';
+            return 'En curso';
             break;
     }
     }
@@ -398,7 +398,7 @@ class Utilities
             break;
 
         default:
-            return 'Cash';
+            return 'Efectivo';
             break;
     }
     }
@@ -408,15 +408,15 @@ class Utilities
     {
         switch ($status) {
         case '1':
-            return 'Deposited';
+            return 'Depositado';
             break;
 
         case '2':
-            return 'Cleared';
+            return 'Despejado';
             break;
 
         case '3':
-            return 'Bounced';
+            return 'Rebotado';
             break;
 
         case '4':
@@ -434,11 +434,11 @@ class Utilities
     {
         switch ($gender) {
         case 'm':
-            return 'Male';
+            return 'Masculino';
             break;
 
         case 'f':
-            return 'Female';
+            return 'Femenino';
             break;
     }
     }
@@ -466,7 +466,7 @@ class Utilities
             break;
 
         default:
-            return 'Automatic';
+            return 'Automatico';
             break;
     }
     }
