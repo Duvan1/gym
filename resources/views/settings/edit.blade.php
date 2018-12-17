@@ -24,7 +24,7 @@
 							<!--Main row start-->
 							<div class="col-sm-4">
 								<div class="form-group">
-									{!! Form::label('gym_name','Gym Name') !!}
+									{!! Form::label('gym_name','Nombre del Gym') !!}
 									{!! Form::text('gym_name',$settings['gym_name'],['class'=>'form-control', 'id' => 'gym_name']) !!}
 								</div>
 							</div>
@@ -52,7 +52,7 @@
 								<div class="row">
 									<div class="col-sm-12">
 										<div class="form-group">
-											{!! Form::label('gym_logo','Gym Logo') !!}<br>
+											{!! Form::label('gym_logo','Logo') !!}<br>
 											<img alt="gym logo" src="{{url('/images/Invoice/'.'gym_logo'.'.jpg') }}"/>
 										</div>
 									</div>

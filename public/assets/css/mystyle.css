@@ -11,7 +11,10 @@
 * Overrides ********************
 ********************************/
 body{
-	background: #757575  url('../img/web/bg.jpg') !important;
+	background: #757575  url('../img/web/background.jpg') !important;
+	
+	background-size: 100% 100%  !important;
+	background-attachment: fixed !important;
 }
 
 /* Global - Master */

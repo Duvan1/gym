@@ -8,7 +8,7 @@
             <div class="col-md-12">
                 <div class="panel no-border">
                     <div class="panel-title">
-                        <div class="panel-head font-size-20">Enter details of the expense</div>
+                        <div class="panel-head font-size-20">Introduzca detalles del gasto</div>
                     </div>
                     <div class="panel-body">
                     {!! Form::model($expense, ['method' => 'POST','action' => ['ExpensesController@update',$expense->id], 'id' => 'expensesform']) !!}
